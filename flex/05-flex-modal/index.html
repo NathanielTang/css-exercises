@@ -1,20 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Modal</title>
-</head>
-<body>
-  <div class="modal">
-    <div class="icon">!</div>
-    <div class="header">Are you sure you want to do that?</div>
-    <div class="close-button">✖</div>
-    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur excepturi id soluta, numquam minima rerum doloremque eveniet aspernatur beatae commodi. Cupiditate recusandae ad repellendus quidem consectetur sequi amet aspernatur cumque!</div>
-    <button class="continue">Continue</button>
-    <button class="cancel">Cancel</button>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Modal</title>
+  </head>
+  <body>
+    <div class="modal">
+      <div class="icon">!</div>
+      
+
+      <div class="middle">
+        <div class="header">Are you sure you want to do that?</div>
+
+        <div class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+          excepturi id soluta, numquam minima rerum doloremque eveniet
+          aspernatur beatae commodi. Cupiditate recusandae ad repellendus quidem
+          consectetur sequi amet aspernatur cumque!
+        </div>
+        <div class="separate">
+          <button class="continue">Continue</button>
+          <button class="cancel">Cancel</button>
+        </div>
+    
+    </div> 
+     <div class="close-button">✖</div>
+    </div>
+  </body>
 </html>
+
+<!-- I want to use flex to create 3 columns, with the middle one being
+the biggest. Then I want to add dividers within the HTML doc to separate
+continue and cancel from the text and header so there are 3 sections within
+the column flexbox in the middle-->
+
+<!-- reflection after seeing solution:  I didn't need to make 3 columns,
+the solution was much simpler. The solution's method allows the text to 
+go underneath the X button since the X isn't its own flexbox.-->
